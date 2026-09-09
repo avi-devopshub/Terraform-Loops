@@ -3,7 +3,7 @@ resource "aws_instance" "ec2"{
     instance_type = "t3.micro"
     key_name = "mumbai"
     count = 2
-    tags {
+    tags = {
         Name = "server-${count.index+1}"
     }
 }

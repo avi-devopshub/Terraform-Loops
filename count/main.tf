@@ -4,6 +4,6 @@ resource "aws_instance" "ec2"{
     key_name = "mumbai"
     count = 2
     tags {
-        Name = "server-${count.index}"
+        Name = "server-${count.index+1}"
     }
 }

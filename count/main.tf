@@ -4,6 +4,6 @@ resource "aws_instance" "ec2"{
     key_name = var.key_name
     count = var.instance_count
     tags = {
-        Name = erver-${terraform.workspace}
+        Name = "Server-${terraform.workspace}"
     }
 }
